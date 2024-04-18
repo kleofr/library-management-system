@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dashboard {
+    display: flex; /* Use flexbox for layout */
+    height: 100vh;
+}
+
+.menu {
+    background-color: #1d1d1d;
+    color: #fff;
+    width: 260px; /* Set a fixed width for the menu */
+    min-width: 260px; /* Ensure a minimum width to prevent shrinking */
+    max-width: 260px; /* Ensure a maximum width to prevent expanding */
+    padding-top: 50px;
+}
+
+
+.menu h1 {
+    padding: 20px 0 10px 20px;
+    font-size: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    padding: 15px 20px;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex; /* Align icon and text horizontally */
+    align-items: center; /* Center icon and text vertically */
+}
+
+.menu ul li a i {
+    margin-right: 10px; /* Add spacing between icon and text */
+}
+
+.menu ul li:hover {
+    background-color: #444;
+}
+
+.menu ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Add highlight style */
+.menu ul li.active {
+    background-color: #444;
+}
+
+.menu ul li.active a {
+    color: #ffcc00;
+}
+
+.content {
+    padding: 50px; /* Add padding to create space for the menu bar */
+    width: calc(100% - 260px); /* Set a fixed width for the content */
+}
+
+
+/* Hide forms by default */
+.hidden {
+    display: none;
+}
+.form-inputs {
+    width: calc(100% - 10px); /* Set a fixed width for input fields */
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+
+.form-inputs:focus {
+    outline: none;
+    border-color: #ffcc00; /* Change border color when input is focused */
+}
+.form-buttons {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #1d1d1d;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-buttons:hover {
+    color: #ffcc00; /* Darken the background color on hover */
+}

@@ -1,0 +1,28 @@
+<form id="addBookForm">
+                    <h3>Add a book</h3>
+                    <input type="text" placeholder="Book ID" required>
+                    <input type="text" placeholder="ISBN" required>
+                    <input type="text" placeholder="Book Name" required>
+                    <input type="text" placeholder="Author" required>
+                    <input type="text" placeholder="Genre" required>
+                    <button type="submit">Submit</button>
+                </form>
+                <form id="searchBookForm">
+                    <h3>Search a book</h3>
+                    <input type="text" placeholder="Book ID" required>
+                    <button type="submit">Submit</button>
+                </form>
+                <form id="registerStudentForm">
+                    <h3>Register a Student</h3>
+                    <input type="text" placeholder="ERP Code" required>
+                    <input type="text" placeholder="Name" required>
+                    <input type="text" placeholder="Phone No." required>
+                    <input type="text" placeholder="Department" required>
+                    <input type="text" placeholder="Year" required>
+                    <button type="submit">Submit</button>
+                </form>
+                <form id="searchStudentForm">
+                    <h3>Search a Student</h3>
+                    <input type="text" placeholder="ERP Code" required>
+                    <button type="submit">Submit</button>
+                </form>

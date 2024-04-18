@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="menu">
+            <h1>Library Management System</h1>
+            <ul>
+                <li><a href="#" data-target="book-registration"><i class="fas fa-book"></i> Book Registration</a></li>
+                <li><a href="#" data-target="student-registration"><i class="fas fa-user"></i> Student Registration</a></li>
+                <li><a href="#" data-target="book-search"><i class="fas fa-search"></i> Book Search</a></li>
+                <li><a href="#" data-target="student-search"><i class="fas fa-id-card"></i> Student Search</a></li>
+                <li><a href="#" data-target="book-allotment"><i class="fas fa-book-open"></i> Book Allotment</a></li>
+                <li><a href="#" data-target="logout"><i class="fas fa-door-open"></i> Logout</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <form id="book-registration" class="hidden">
+                <h1>Book Registration</h1>
+                <input id="bookId" class="form-inputs" placeholder="Book Id"/>
+                <input id="bookName" class="form-inputs" placeholder="Book Name"/>
+                <input id="bookAuthor" class="form-inputs" placeholder="Author"/>
+                <input id="bookGenre" class="form-inputs" placeholder="Genre"/>
+                <button class="form-buttons" type="submit">Submit</button>
+                <button class="form-buttons" type="reset">Reset</button>
+            </form>
+            <form id="student-registration" class="hidden">
+                <h1>Student Registration</h1>
+                <input id="studentERP" class="form-inputs" placeholder="ERP Id"/>
+                <input id="studentName" class="form-inputs" placeholder="Name"/>
+                <input id="studentPhoneNo" class="form-inputs" placeholder="Phone No."/>
+                <input id="studentDept" class="form-inputs" placeholder="Department"/>
+                <button class="form-buttons" type="submit">Submit</button>
+                <button class="form-buttons" type="reset">Reset</button>
+            </form>
+            <form id="book-search" class="hidden">
+                <h1>Book Search</h1>
+                <input id="bookKey" class="form-inputs" placeholder="Try searching for Book Id, Name, Author or Genre"/>
+                <button class="form-buttons" type="submit">Submit</button>
+            </form>
+            <form id="student-search" class="hidden">
+                <h1>Student Search</h1>
+                <input id="studentKey" class="form-inputs" placeholder="Try searching for Name, ERP Id or Department"/>
+                <button class="form-buttons" type="submit">Submit</button>
+            </form>
+            <form id="book-allotment" class="hidden">
+                <h1>Book Allotment</h1>
+                <input id="allotmentERP" class="form-inputs" placeholder="ERP Id"/>
+                <input id="allotmentBookId" class="form-inputs" placeholder="Book Id"/>
+                <button class="form-buttons" type="submit">Submit</button>
+                <button class="form-buttons" type="reset">Reset</button>
+                
+            </form>
+        </div>
+    </div>
+    <script src="./scripts/dashboard.js"></script>
+</body>
+</html>
